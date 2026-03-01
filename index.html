@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danil Palma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    html, body {
+      height: 100%;
+      background: #f5f0e8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .name {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(48px, 10vw, 120px);
+      letter-spacing: 0.08em;
+      color: #2c2820;
+      line-height: 1;
+      opacity: 0;
+      animation: fade 1.8s ease forwards 0.3s;
+    }
+
+    .handle {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-style: italic;
+      font-size: clamp(16px, 2.5vw, 32px);
+      letter-spacing: 0.12em;
+      color: #a89880;
+      margin-top: 12px;
+      align-self: flex-end;
+      opacity: 0;
+      animation: fade 1.8s ease forwards 0.7s;
+    }
+
+    @keyframes fade {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <h1 class="name">Danil Palma</h1>
+    <p class="handle">@whathebronte</p>
+  </div>
+</body>
+</html>
